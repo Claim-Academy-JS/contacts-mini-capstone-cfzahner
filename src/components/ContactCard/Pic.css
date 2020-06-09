@@ -1,0 +1,12 @@
+
+.Pic {
+  margin: 0;
+}
+
+.Pic img {
+  border-radius: 50%;
+}
+
+.Pic figcaption {
+  text-align: center;
+}
