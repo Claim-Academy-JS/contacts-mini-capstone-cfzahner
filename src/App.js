@@ -1,5 +1,6 @@
 import React from "react";
+import { ContactCard as Card } from "./components";
+import { getContacts } from "./api";
 
-export const App = () => {
-  return <h1>Contact Book!</h1>;
-};
+export class App extends React.Component {
+  state = { contacts: [] };
