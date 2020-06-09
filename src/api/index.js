@@ -1,5 +1,4 @@
-// TODO: Add API method to retrieve contacts
-export const getContacts = async (contacts) => {
-  const resp = await window.fetch("https://randomuser.me/api/");
-  return resp.json;
+export const getContacts = async (numOfResults = 12) => {
+  const res = await fetch(`https://randomuser.me/api/?results=${numOfResults}`);
+  return res.json();
 };
