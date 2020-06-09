@@ -15,9 +15,7 @@ export class App extends React.Component {
       ({ cell, dob, email, location, name, picture }, index) => (
         <Card
           cell={cell}
-          dob={dob}
           email={email}
-          location={location}
           name={name}
           picture={picture}
           key={index}
