@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactCard as Card } from "./components";
+import { ContactCard as Card } from "./components/ContactCard";
 import { getContacts } from "./api";
 
 export class App extends React.Component {
