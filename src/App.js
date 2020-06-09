@@ -23,6 +23,6 @@ export class App extends React.Component {
   }
 
   render() {
-    return this.renderCards();
+    return <main className="App">{this.renderCards()}</main>;
   }
 }
