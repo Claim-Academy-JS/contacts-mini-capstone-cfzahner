@@ -5,6 +5,9 @@ import { getContacts } from "./api";
 export class App extends React.Component {
   state = { contacts: [] };
 
+  renderCards = () =>
+    this.state.contacts.map((_, index) => <Card key={index} />);
+
   async componentDidMount() {
     const contacts = await getContacts();
     this.setState({ contacts });
