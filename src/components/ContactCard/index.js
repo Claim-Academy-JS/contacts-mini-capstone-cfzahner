@@ -6,8 +6,7 @@ import { InfoToggle } from "./InfoToggle";
 import { getStateProxy } from "utils";
 
 import "./ContactCard.css";
-import styles from "./Pic.module.css";
-
+import styles from "./ContactCard.module.css";
 export class ContactCard extends React.Component {
   static propTypes = {
     cell: PropTypes.string,
@@ -32,7 +31,8 @@ export class ContactCard extends React.Component {
       info: "cell",
     },
   ];
-  renderInfoToggle() {
+
+  renderInfoToggles() {
     return this.infoToggles.map(({ icon, info }) => (
       <InfoToggle key={icon} icon={icon} info={info} stProxy={this.stProxy} />
     ));
@@ -43,7 +43,7 @@ export class ContactCard extends React.Component {
       <div className="ContactCard">
         <InfoDisplay info={this.props[this.state.activeInfo]} />
         <Pic name={this.props.name} pic={this.props.picture} />
-        <div className={styles.InfoToggle}>{this.renderInfoToggle()}</div>
+        <div className={styles.infoToggle}>{this.renderInfoToggles()}</div>
       </div>
     );
   }
