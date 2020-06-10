@@ -1,12 +1,17 @@
 .ContactCard {
   align-items: center;
-  background-color: #f9f9f9;
-  border-radius: 3px;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: grey;
+  border-radius: 40px;
+  border: solid white 4px;
   display: flex;
   flex-direction: column;
-  margin: 0.5rem;
+  margin: 3rem 0;
   max-width: 550px;
   padding: 1rem 0.5rem;
-  width: 80vw;
+  width: 30vw;
+}
+
+body {
+  color: white;
+  background-color: aquamarine;
 }
