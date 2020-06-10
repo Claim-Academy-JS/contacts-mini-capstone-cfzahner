@@ -2,6 +2,7 @@
 .infoToggle {
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
   width: 240px;
+  flex-direction: row;
+  justify-content: space-around;
 }
