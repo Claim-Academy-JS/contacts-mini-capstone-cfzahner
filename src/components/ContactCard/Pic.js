@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 import React from "react";
+import "./Pic.css";
+import styles from "./Pic.module.css";
 
 export const Pic = ({ name, pic }) => (
-  <figure>
+  <figure className="Pic">
     <img src={pic.large} alt="" />
     <figcaption>
       {name.first} {name.last}
