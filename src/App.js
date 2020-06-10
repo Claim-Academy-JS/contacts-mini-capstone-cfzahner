@@ -1,6 +1,7 @@
 import React from "react";
 import { ContactCard as Card } from "./components/ContactCard";
 import { getContacts } from "./api";
+import "./App.css";
 
 export class App extends React.Component {
   state = { contacts: [] };
@@ -23,6 +24,6 @@ export class App extends React.Component {
   }
 
   render() {
-    return <main className="App">{this.renderCards()}</main>;
+    return <main>{this.renderCards()}</main>;
   }
 }
