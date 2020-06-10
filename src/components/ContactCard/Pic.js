@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
 import "./Pic.css";
-import styles from "./Pic.module.css";
 
 export const Pic = ({ name, pic }) => (
   <figure className="Pic">
